@@ -216,3 +216,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Project-specific
+.env
+data/*.csv
+
+# agent environment
+.opencode/
+openspec/

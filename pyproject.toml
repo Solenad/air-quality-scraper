@@ -1,0 +1,16 @@
+[project]
+name = "air-quality-scraper"
+version = "0.1.0"
+description = "Philippines PM2.5 air quality data collection system"
+requires-python = ">=3.11"
+dependencies = [
+    "httpx>=0.27,<1",
+    "sqlalchemy[asyncio]>=2.0,<3",
+    "aiomysql>=0.2,<1",
+    "pydantic-settings>=2.1,<3",
+    "loguru>=0.7,<1",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
