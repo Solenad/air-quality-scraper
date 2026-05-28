@@ -7,17 +7,20 @@ import sys
 from loguru import logger
 
 from aq_scraper.config.settings import Settings
-from aq_scraper.pipeline.exporter import export_csv
 from aq_scraper.scrapers.openaq import OpenAQScraper
-from aq_scraper.storage.db import create_engine, create_session_factory, get_session, init_db
 
 
 async def main() -> None:
     parser = argparse.ArgumentParser(description="Air Quality Data Scraper")
     parser.add_argument(
-        "--source",
-        required=True,
-        help="Data source to scrape (e.g., openaq)",
+        "--location-ids",
+        default=None,
+        help="Comma-separated OpenAQ location IDs (overrides defaults)",
+    )
+    parser.add_argument(
+        "--date-from",
+        default=None,
+        help="Start date ISO 8601 (e.g. 2021-01-01T00:00:00Z)",
     )
     args = parser.parse_args()
 
@@ -26,34 +29,28 @@ async def main() -> None:
 
     settings = Settings()
 
-    # Validate required DB vars
-    if not settings.DB_USER or not settings.DB_PASS or not settings.DB_NAME:
-        logger.error("DB_USER, DB_PASS, and DB_NAME must be set in environment")
-        sys.exit(1)
+    location_ids: list[str] | None = None
+    if args.location_ids:
+        location_ids = [x.strip() for x in args.location_ids.split(",")]
+    elif settings.OPENAQ_LOCATION_IDS:
+        location_ids = [x.strip() for x in settings.OPENAQ_LOCATION_IDS.split(",")]
 
-    # Setup database
-    engine = create_engine(settings)
-    await init_db(engine)
-    session_factory = create_session_factory(engine)
+    date_from = args.date_from or settings.OPENAQ_DATE_FROM
 
-    if args.source == "openaq":
-        scraper = OpenAQScraper(settings)
-    else:
-        logger.error("Unknown source: {}", args.source)
-        sys.exit(1)
+    scraper = OpenAQScraper(
+        settings,
+        location_ids=location_ids,
+        date_from=date_from,
+    )
 
     try:
-        async with get_session(session_factory) as session:
-            count = await scraper.run(session)
-            if count > 0:
-                export_path = await export_csv(args.source, session)
-                if export_path:
-                    logger.info("CSV exported to {}", export_path)
-            else:
-                logger.warning("No readings stored — skipping CSV export")
+        count = await scraper.run()
+        if count > 0:
+            logger.info("Scraping complete — {} records written to data/", count)
+        else:
+            logger.warning("No records found")
     finally:
         await scraper.close()
-        await engine.dispose()
 
 
 if __name__ == "__main__":

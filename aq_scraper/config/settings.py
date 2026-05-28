@@ -10,19 +10,11 @@ class Settings(BaseSettings):
         extra="ignore",
     )
 
-    # MySQL connection
-    DB_HOST: str = "localhost"
-    DB_PORT: int = 3306
-    DB_USER: str = ""
-    DB_PASS: str = ""
-    DB_NAME: str = ""
-
-    # OpenAQ API (optional)
+    # OpenAQ API (optional — anonymous access works too)
     OPENAQ_API_KEY: str | None = None
 
-    @property
-    def async_dsn(self) -> str:
-        return (
-            f"mysql+aiomysql://{self.DB_USER}:{self.DB_PASS}"
-            f"@{self.DB_HOST}:{self.DB_PORT}/{self.DB_NAME}"
-        )
+    # Comma-separated location IDs for historical mode (overrides built-in defaults)
+    OPENAQ_LOCATION_IDS: str = ""
+
+    # Start date for historical pulls (ISO 8601 format)
+    OPENAQ_DATE_FROM: str = "2021-01-01T00:00:00Z"
