@@ -18,3 +18,6 @@ class Settings(BaseSettings):
 
     # Start date for historical pulls (ISO 8601 format)
     OPENAQ_DATE_FROM: str = "2021-01-01T00:00:00Z"
+
+    # WAQI API (required)
+    WAQI_API_KEY: str = ""

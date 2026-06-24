@@ -8,10 +8,17 @@ from loguru import logger
 
 from aq_scraper.config.settings import Settings
 from aq_scraper.scrapers.openaq import OpenAQScraper
+from aq_scraper.scrapers.waqi import WAQIScraper
 
 
 async def main() -> None:
     parser = argparse.ArgumentParser(description="Air Quality Data Scraper")
+    parser.add_argument(
+        "--source",
+        default="openaq",
+        choices=["openaq", "waqi"],
+        help="Data source to scrape (default: openaq)",
+    )
     parser.add_argument(
         "--location-ids",
         default=None,
@@ -29,19 +36,22 @@ async def main() -> None:
 
     settings = Settings()
 
-    location_ids: list[str] | None = None
-    if args.location_ids:
-        location_ids = [x.strip() for x in args.location_ids.split(",")]
-    elif settings.OPENAQ_LOCATION_IDS:
-        location_ids = [x.strip() for x in settings.OPENAQ_LOCATION_IDS.split(",")]
+    if args.source == "waqi":
+        scraper = WAQIScraper(settings)
+    else:
+        location_ids: list[str] | None = None
+        if args.location_ids:
+            location_ids = [x.strip() for x in args.location_ids.split(",")]
+        elif settings.OPENAQ_LOCATION_IDS:
+            location_ids = [x.strip() for x in settings.OPENAQ_LOCATION_IDS.split(",")]
 
-    date_from = args.date_from or settings.OPENAQ_DATE_FROM
+        date_from = args.date_from or settings.OPENAQ_DATE_FROM
 
-    scraper = OpenAQScraper(
-        settings,
-        location_ids=location_ids,
-        date_from=date_from,
-    )
+        scraper = OpenAQScraper(
+            settings,
+            location_ids=location_ids,
+            date_from=date_from,
+        )
 
     try:
         count = await scraper.run()

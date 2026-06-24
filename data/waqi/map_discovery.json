@@ -1,0 +1,496 @@
+{
+  "data": [
+    {
+      "idx": "A544750",
+      "aqi": "68",
+      "utime": "2026-06-16T08:00:00Z",
+      "geo": [
+        14.549386,
+        121.072644
+      ],
+      "name": "Sto. Rosario Bridge"
+    },
+    {
+      "idx": "A544792",
+      "aqi": "65",
+      "utime": "2026-06-16T08:00:00Z",
+      "geo": [
+        14.563834349896222,
+        121.05797009999878
+      ],
+      "name": "Unnamed (DNVBA1576 → AL739RG7)"
+    },
+    {
+      "idx": "A544837",
+      "aqi": "75",
+      "utime": "2026-06-16T08:00:00Z",
+      "geo": [
+        14.5873438,
+        121.0466469
+      ],
+      "name": "Old Wack Wack Road corner Shaw Boulevard"
+    },
+    {
+      "idx": "A1866313",
+      "aqi": "-",
+      "utime": "2026-06-03T10:00:00Z",
+      "geo": [
+        14.588227995276952,
+        121.0585297117018
+      ],
+      "name": "ADB Courtyard (Demo)"
+    },
+    {
+      "idx": "A544810",
+      "aqi": "80",
+      "utime": "2026-06-16T08:00:00Z",
+      "geo": [
+        14.5688,
+        121.017952
+      ],
+      "name": "Kalayaan Avenue  - South Avenue Intersection"
+    },
+    {
+      "idx": "A534718",
+      "aqi": "66",
+      "utime": "2026-06-16T08:00:00Z",
+      "geo": [
+        14.456269,
+        121.045694
+      ],
+      "name": "Near Sucat Interchange/Exit"
+    },
+    {
+      "idx": "A544843",
+      "aqi": "72",
+      "utime": "2026-06-16T08:00:00Z",
+      "geo": [
+        14.551575,
+        120.98649
+      ],
+      "name": "World Trade Center"
+    },
+    {
+      "idx": "A544777",
+      "aqi": "95",
+      "utime": "2026-06-16T08:00:00Z",
+      "geo": [
+        14.675077,
+        120.939888
+      ],
+      "name": "Barangay Tanza 2 Hall"
+    },
+    {
+      "idx": "A544807",
+      "aqi": "85",
+      "utime": "2026-06-16T08:00:00Z",
+      "geo": [
+        14.714046,
+        121.000876
+      ],
+      "name": "3S Center Bagbaguin"
+    },
+    {
+      "idx": "A544813",
+      "aqi": "82",
+      "utime": "2026-06-16T08:00:00Z",
+      "geo": [
+        14.693972,
+        121.009194
+      ],
+      "name": "3S Center Ugong"
+    },
+    {
+      "idx": "A544831",
+      "aqi": "71",
+      "utime": "2026-06-16T08:00:00Z",
+      "geo": [
+        14.529036,
+        121.004715
+      ],
+      "name": "Aurora Boulevard (Tramo) - Andrews Avenue"
+    },
+    {
+      "idx": "A544774",
+      "aqi": "84",
+      "utime": "2026-06-16T08:00:00Z",
+      "geo": [
+        14.548484,
+        121.000531
+      ],
+      "name": "Santa Clara - Pasay City General Hospital"
+    },
+    {
+      "idx": "A544771",
+      "aqi": "77",
+      "utime": "2026-06-16T08:00:00Z",
+      "geo": [
+        14.6034578,
+        121.04448164
+      ],
+      "name": "Ortigas Avenue-Roosevelt Intersection"
+    },
+    {
+      "idx": "A544759",
+      "aqi": "68",
+      "utime": "2026-06-16T08:00:00Z",
+      "geo": [
+        14.567462,
+        121.039293
+      ],
+      "name": "J.P. Rizal Avenue corner Camia"
+    },
+    {
+      "idx": "A544822",
+      "aqi": "73",
+      "utime": "2026-06-16T08:00:00Z",
+      "geo": [
+        14.561274,
+        121.027993
+      ],
+      "name": "Makati Avenue - Buendia Avenue Intersection"
+    },
+    {
+      "idx": "A534712",
+      "aqi": "78",
+      "utime": "2026-06-16T08:00:00Z",
+      "geo": [
+        14.578627142575819,
+        121.05674819930258
+      ],
+      "name": "Along Shaw Blvd."
+    },
+    {
+      "idx": "A499006",
+      "aqi": "65",
+      "utime": "2026-06-16T08:00:00Z",
+      "geo": [
+        14.58853,
+        121.05822
+      ],
+      "name": "Ortigas"
+    },
+    {
+      "idx": "A544762",
+      "aqi": "82",
+      "utime": "2026-06-16T08:00:00Z",
+      "geo": [
+        14.517695,
+        120.996383
+      ],
+      "name": "Barangay Tambo - Quirino Avenue"
+    },
+    {
+      "idx": "A544789",
+      "aqi": "89",
+      "utime": "2026-06-16T08:00:00Z",
+      "geo": [
+        14.644431447196313,
+        120.98408600000003
+      ],
+      "name": "C3 Road (5th Avenue) - Rizal Avenue Extension"
+    },
+    {
+      "idx": "A538831",
+      "aqi": "79",
+      "utime": "2026-06-16T09:42:24Z",
+      "geo": [
+        14.64799638229,
+        120.97788065672
+      ],
+      "name": "Baltazar Street"
+    },
+    {
+      "idx": "A544765",
+      "aqi": "101",
+      "utime": "2026-06-16T08:00:00Z",
+      "geo": [
+        14.669158920946344,
+        120.97575508465562
+      ],
+      "name": "Malabon Action Center"
+    },
+    {
+      "idx": "A544828",
+      "aqi": "70",
+      "utime": "2026-06-16T08:00:00Z",
+      "geo": [
+        14.378532,
+        121.046153
+      ],
+      "name": "Barangay Tunasan - Maharlika Highway (SM Center Muntinlupa)"
+    },
+    {
+      "idx": "A534715",
+      "aqi": "-",
+      "utime": "2025-12-07T22:00:00Z",
+      "geo": [
+        14.478224,
+        120.986642
+      ],
+      "name": "C5 Ext. Las Pinas"
+    },
+    {
+      "idx": "A544840",
+      "aqi": "63",
+      "utime": "2026-06-16T08:00:00Z",
+      "geo": [
+        14.4448071,
+        121.045861
+      ],
+      "name": "Barangay Buli - Concepcion Street"
+    },
+    {
+      "idx": "A522307",
+      "aqi": "85",
+      "utime": "2026-06-16T08:00:00Z",
+      "geo": [
+        14.584554314748889,
+        121.01876814665941
+      ],
+      "name": "Mandaluyong City"
+    },
+    {
+      "idx": "A1411318",
+      "aqi": "79",
+      "utime": "2026-06-16T08:00:00Z",
+      "geo": [
+        14.598713747379648,
+        120.98947095396052
+      ],
+      "name": "San Sebastian Residences"
+    },
+    {
+      "idx": "A544801",
+      "aqi": "88",
+      "utime": "2026-06-16T08:00:00Z",
+      "geo": [
+        14.636658247708848,
+        120.96414410671407
+      ],
+      "name": "Barangay San Rafael Hall"
+    },
+    {
+      "idx": "A544825",
+      "aqi": "70",
+      "utime": "2026-06-16T08:00:00Z",
+      "geo": [
+        14.661147702562708,
+        121.12475934066968
+      ],
+      "name": "Barangay Fortune - Santan Street"
+    },
+    {
+      "idx": "A544753",
+      "aqi": "75",
+      "utime": "2026-06-16T08:00:00Z",
+      "geo": [
+        14.60399460444948,
+        121.02780921650638
+      ],
+      "name": "San Juan Mini Park"
+    },
+    {
+      "idx": "A1411324",
+      "aqi": "87",
+      "utime": "2026-06-16T08:00:00Z",
+      "geo": [
+        14.618250007568825,
+        120.97141503354496
+      ],
+      "name": "Near Puregold Tayuman"
+    },
+    {
+      "idx": "A544786",
+      "aqi": "76",
+      "utime": "2026-06-16T08:00:00Z",
+      "geo": [
+        14.750967,
+        121.020422
+      ],
+      "name": "Caloocan Sports Complex"
+    },
+    {
+      "idx": "A544795",
+      "aqi": "75",
+      "utime": "2026-06-16T08:00:00Z",
+      "geo": [
+        14.545701,
+        121.065142
+      ],
+      "name": "Pateros Bridge"
+    },
+    {
+      "idx": "A544804",
+      "aqi": "84",
+      "utime": "2026-06-16T08:00:00Z",
+      "geo": [
+        14.586549,
+        121.025494
+      ],
+      "name": "Mandaluyong Elementary School"
+    },
+    {
+      "idx": "A1925536",
+      "aqi": "71",
+      "utime": "2026-06-16T08:00:00Z",
+      "geo": [
+        14.556123,
+        121.022362
+      ],
+      "name": "Ayala Ave."
+    },
+    {
+      "idx": "A477637",
+      "aqi": "53",
+      "utime": "2026-06-16T08:00:00Z",
+      "geo": [
+        14.63525,
+        121.07784
+      ],
+      "name": "NASA GSFC Rutgers Calib. N12"
+    },
+    {
+      "idx": "A1597180",
+      "aqi": "70",
+      "utime": "2026-06-16T08:00:00Z",
+      "geo": [
+        14.569003476943587,
+        120.98365642928303
+      ],
+      "name": "Rajah Sulayman Park"
+    },
+    {
+      "idx": "A540709",
+      "aqi": "69",
+      "utime": "2026-06-16T08:00:00Z",
+      "geo": [
+        14.638415,
+        121.076703
+      ],
+      "name": "Near Katipunan Ave., Quezon City"
+    },
+    {
+      "idx": "A544783",
+      "aqi": "77",
+      "utime": "2026-06-16T08:00:00Z",
+      "geo": [
+        14.634097,
+        121.098029
+      ],
+      "name": "Marikina Sports Complex"
+    },
+    {
+      "idx": "A544819",
+      "aqi": "66",
+      "utime": "2026-06-16T08:00:00Z",
+      "geo": [
+        14.456707700000003,
+        121.0351867
+      ],
+      "name": "Barangay San Antonio - Parañaque-Sucat Road (Shopwise)"
+    },
+    {
+      "idx": "A544768",
+      "aqi": "73",
+      "utime": "2026-06-16T08:00:00Z",
+      "geo": [
+        14.568382,
+        121.02845
+      ],
+      "name": "J.P. Rizal Avenue corner Pertierra"
+    },
+    {
+      "idx": "A522301",
+      "aqi": "-",
+      "utime": "2026-05-01T06:00:00Z",
+      "geo": [
+        14.537698,
+        121.000941
+      ],
+      "name": "Pasay-Taft"
+    },
+    {
+      "idx": "A540703",
+      "aqi": "69",
+      "utime": "2026-06-16T08:00:00Z",
+      "geo": [
+        14.529173,
+        120.989878
+      ],
+      "name": "Bradco Ave. cor Macapagal"
+    },
+    {
+      "idx": "A544834",
+      "aqi": "74",
+      "utime": "2026-06-16T08:00:00Z",
+      "geo": [
+        14.5507,
+        121.022211
+      ],
+      "name": "Makati Avenue  - Antonio Arnaiz Avenue Intersection"
+    },
+    {
+      "idx": "A544780",
+      "aqi": "80",
+      "utime": "2026-06-16T08:00:00Z",
+      "geo": [
+        14.7107144,
+        120.9954476
+      ],
+      "name": "3S Center Paso De Blas"
+    },
+    {
+      "idx": "A547255",
+      "aqi": "67",
+      "utime": "2026-06-16T08:00:00Z",
+      "geo": [
+        14.59083,
+        121.070368
+      ],
+      "name": "ASMPH"
+    },
+    {
+      "idx": "A1411315",
+      "aqi": "82",
+      "utime": "2026-06-16T08:00:00Z",
+      "geo": [
+        14.590636395204928,
+        120.97111853152661
+      ],
+      "name": "Anda Circle"
+    },
+    {
+      "idx": "A544798",
+      "aqi": "91",
+      "utime": "2026-06-16T08:00:00Z",
+      "geo": [
+        14.669631,
+        120.946759
+      ],
+      "name": "Gen. Luna St. corner Gov. Pascual Ave."
+    },
+    {
+      "idx": "A540706",
+      "aqi": "105",
+      "utime": "2026-06-16T08:00:00Z",
+      "geo": [
+        14.657436,
+        120.98362
+      ],
+      "name": "Monumento, Caloocan"
+    },
+    {
+      "idx": "A544756",
+      "aqi": "-",
+      "utime": "2026-06-15T21:00:00Z",
+      "geo": [
+        14.69158,
+        120.972459
+      ],
+      "name": "Valenzuela CENRO (ARCA North)"
+    }
+  ],
+  "dt": "0.27ms",
+  "status": "ok"
+}
