@@ -1,0 +1,19 @@
+services:
+  - type: cron
+    name: openaq-hourly
+    runtime: python
+    region: singapore
+    schedule: "0 * * * *"
+    buildCommand: pip install -r requirements.txt
+    startCommand: python scripts/scheduler.py
+    envVars:
+      - key: OPENAQ_API_KEY
+        sync: false
+      - key: R2_ENDPOINT_URL
+        sync: false
+      - key: R2_ACCESS_KEY_ID
+        sync: false
+      - key: R2_SECRET_ACCESS_KEY
+        sync: false
+      - key: R2_BUCKET_NAME
+        sync: false
